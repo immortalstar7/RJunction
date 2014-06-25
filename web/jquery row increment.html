@@ -1,0 +1,71 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="script/jquery-1.7.1.js"></script>
+        <script type="text/javascript" src="script/jquery.table.addrow.js" ></script>
+        <script type="text/javascript">
+            (function($){
+                $(document).ready(function(){
+                    $(".addRow").btnAddRow();
+                    $(".delRow").btnDelRow();
+                });
+            })(jQuery);
+        </script>
+    </head>
+    <body>
+        <form name="restaurantdetail" action="" method="post">
+            <table width="679" border="0"  style="font-size:19px; border:solid;">
+                <tr>
+                    <td width="201">Name:</td>
+                    <td colspan="3">...</td>
+                </tr>
+                <tr style="border-bottom:solid; border-bottom-color:#000000">
+                    <td valign="top" style="padding-bottom:4px;"><p>Address:</p>
+                      <p>&nbsp;</p>
+                      <p>PostCode:</br>
+                        </br>
+                    Phone No.</p>                    </td>
+                    <td width="161" valign="top">
+                      <p>
+                        <textarea name="textarea" rows="3"></textarea>
+                      </p>
+                      <p>
+                        <input type="textfield" name="postcode">
+                        </br>
+                        </br>
+                        <input type="textfield" name="phoneno">
+                      </p></td>
+                  <td width="196" valign="bottom"><input name="button" type="button" class="addRow" value="Add Another Restaurant Branch"/></td>
+                  <td width="95" valign="bottom"><input type="button" class="delRow" value="Delete Branch"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Open Hours:</td>
+                    <td colspan="3">from 
+                      <select name="select">
+                      </select>
+                     to  <select name="select2">
+                     </select> 
+                     or <a href="alwaysopen">always open</a>  </td>
+                </tr>
+                <tr>
+                    <td>About</td>
+                    <td colspan="3"><textarea rows="3"> </textarea></td>
+                </tr>
+                
+                <tr>
+                    <td>Website</td>
+                    <td colspan="2"><input type="textfield" name="website"></input></td>
+                    <td align="right"><input name="submit" type="submit" value="continue"></td>
+                </tr>
+          </table>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+connect Rjunction;
+
+create table Restaurant(restaurantId int(10) primary key,restaurantPassword int(10),restaurantCountry varchar(255),restaurantState varchar(255),restaurantCity varchar(255),restaurantAddress varchar(255),restaurantContactno int(10),restaurantisActive boolean,restaurantCreatedate timestamp);
+
+create table RestaurantMenu(menuId int(10) foreign key,menuCategorycode int(20),menuItemcode int(20),menuItemname varchar(255),menuItemprice int(4),menuItemingredient varchar(255),menuItemimage blob,menuLastupdate timestamp);
+
+create table RestaurantPhotos(restaurantId int(10) foreign key,restaurantPhotocode int(10) primary key,restaurantPhoto blob,restaurantPhotocreated timestamp);
+
+create table RestaurentLocation(restaurantId int(10) foreign key,restaurentBranchid int(10) primary key,restaurantBranchaddress varchar(255),restaurantBranchcontactno int(10));
+
+create table RestaurantDeal(dealId int(10) primary key,dealcreatedbyrestaurantId int(10) foreign key, Availabledeals varchar(255));
+
+create table RestaurantFeedback(feedbackRestaurantid int(10) foreign key,Feedbackgivenby varchar(255),Feedback text(65535));

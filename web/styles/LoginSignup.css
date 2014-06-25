@@ -1,0 +1,39 @@
+.header
+{
+	position:inherit;
+	background-repeat:repeat;
+	margin-left:5%;
+	top: 15px;
+	padding: 0px;
+	width: 90%;
+	border: 1px solid #666666;
+}
+.login
+{
+	position:inherit;
+	margin-left:30%;
+	margin-top:12%;
+	width:40%;
+}
+.bottom
+{
+	position:inherit;
+	background-repeat:repeat;
+	margin-top:15%;
+	margin-left:5%;	
+	border: 1px #666666;
+	height:3%;
+	width: 90%;	
+	outline:solid 0.5px;
+}	
+.usersignupform
+{
+	margin-top:1%;
+	background-image:url(cherry-wood.jpg);
+	background-repeat:repeat;
+	margin-left:5%;
+	top: 122px;
+	width: 90%;
+	border: 1px #666666;
+	min-height:81%;
+}
